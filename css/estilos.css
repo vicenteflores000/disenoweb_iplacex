@@ -1,0 +1,300 @@
+/*
+ * Luz & Bloom - Hoja de estilos personalizada sobre template Bootstrap 5
+ * Mantiene la identidad cromática artesanal de la Evaluación N°2 y adapta
+ * los componentes estándar de Bootstrap (navbar, cards, grid, formularios).
+ */
+
+:root {
+    --lb-bg: #faf6f0;
+    --lb-surface: #ffffff;
+    --lb-soft: #f6f0ea;
+    --lb-accent: #7b4f3b;
+    --lb-accent-hover: #5d3929;
+    --lb-title: #43302b;
+    --lb-subtitle: #553e35;
+    --lb-text: #2d2926;
+    --lb-muted: #6e625b;
+    --lb-border: #ebdcd0;
+}
+
+body {
+    font-family: 'Segoe UI', system-ui, -apple-system, Roboto, sans-serif;
+    line-height: 1.65;
+    color: var(--lb-text);
+    background-color: var(--lb-bg);
+    padding-top: 86px;
+}
+
+h1, h2, h3, h4 {
+    color: var(--lb-title);
+    font-weight: 700;
+}
+
+a {
+    color: var(--lb-accent);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+a:hover {
+    color: var(--lb-accent-hover);
+}
+
+.texto-destacado {
+    color: var(--lb-accent);
+    font-weight: 600;
+}
+
+/* Navbar del template adaptada */
+.lb-navbar {
+    background-color: var(--lb-surface);
+    border-bottom: 1px solid var(--lb-border);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
+}
+
+.lb-navbar .navbar-brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--lb-subtitle);
+    font-weight: 700;
+    font-size: 1.3rem;
+    letter-spacing: -0.4px;
+}
+
+.lb-navbar .navbar-brand img {
+    height: 42px;
+    width: auto;
+    border-radius: 8px;
+}
+
+.lb-navbar .nav-link {
+    background-color: var(--lb-soft);
+    color: var(--lb-subtitle);
+    border-radius: 20px;
+    padding: 7px 16px !important;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: all 0.2s ease;
+}
+
+.lb-navbar .nav-link:hover,
+.lb-navbar .nav-link.active {
+    background-color: var(--lb-accent);
+    color: #ffffff;
+}
+
+/* Títulos de página y sección */
+.titulo-pagina {
+    font-size: clamp(1.8rem, 3vw, 2.35rem);
+    letter-spacing: -0.5px;
+}
+
+.subtitulo-pagina {
+    color: var(--lb-muted);
+    font-size: 1.08rem;
+}
+
+.titulo-seccion {
+    font-size: clamp(1.5rem, 2.5vw, 1.95rem);
+    letter-spacing: -0.4px;
+}
+
+.descripcion-seccion {
+    max-width: 720px;
+    color: var(--lb-muted);
+}
+
+/* Hero y tarjetas artesanales */
+.lb-hero-img {
+    width: 100%;
+    max-width: 480px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.07);
+}
+
+.lb-card {
+    background-color: var(--lb-surface);
+    border: 1px solid var(--lb-border);
+    border-radius: 14px;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.04);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.lb-card-hover:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.lb-card h3 {
+    font-size: 1.2rem;
+    color: var(--lb-subtitle);
+}
+
+.lb-product-img {
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Controles del carrusel dentro de tarjetas con múltiples fotos */
+.lb-carousel .carousel-control-prev,
+.lb-carousel .carousel-control-next {
+    width: 36px;
+    height: 36px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(67, 48, 43, 0.72);
+    border-radius: 50%;
+    margin: 0 8px;
+}
+
+.lb-carousel .carousel-control-prev-icon,
+.lb-carousel .carousel-control-next-icon {
+    width: 1rem;
+    height: 1rem;
+}
+
+/* Botones y filtros */
+.btn-lb {
+    background-color: var(--lb-accent);
+    border-color: var(--lb-accent);
+    color: #ffffff;
+    border-radius: 30px;
+    font-weight: 700;
+    padding: 10px 24px;
+    box-shadow: 0 4px 12px rgba(123, 79, 59, 0.24);
+    transition: all 0.2s ease;
+}
+
+.btn-lb:hover,
+.btn-lb:focus {
+    background-color: var(--lb-accent-hover);
+    border-color: var(--lb-accent-hover);
+    color: #ffffff;
+    transform: translateY(-1px);
+}
+
+.btn-lb-outline {
+    background-color: var(--lb-surface);
+    border: 2px solid var(--lb-accent);
+    color: var(--lb-accent);
+    border-radius: 25px;
+    font-weight: 600;
+    padding: 8px 18px;
+    transition: all 0.2s ease;
+}
+
+.btn-lb-outline:hover,
+.btn-lb-outline.active {
+    background-color: var(--lb-accent);
+    border-color: var(--lb-accent);
+    color: #ffffff;
+}
+
+.btn-lb-soft {
+    background-color: #eee5dc;
+    border-color: #eee5dc;
+    color: var(--lb-subtitle);
+    border-radius: 25px;
+    font-weight: 700;
+    padding: 10px 24px;
+}
+
+.btn-lb-soft:hover {
+    background-color: #ded1c4;
+    color: var(--lb-subtitle);
+}
+
+/* Formularios */
+#formulario-contacto .form-control,
+#formulario-contacto .form-select {
+    border: 1px solid #d4c7bd;
+    border-radius: 8px;
+    background-color: #fdfcfb;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 14px;
+}
+
+#formulario-contacto .form-control {
+    padding-right: 14px;
+}
+
+#formulario-contacto .form-control:focus,
+#formulario-contacto .form-select:focus {
+    border-color: var(--lb-accent);
+    background-color: var(--lb-surface);
+    box-shadow: 0 0 0 3px rgba(123, 79, 59, 0.12);
+}
+
+.lb-resumen-box {
+    background-color: var(--lb-soft);
+    border: 1px dashed var(--lb-accent);
+    border-radius: 10px;
+    padding: 14px 16px;
+    font-size: 0.92rem;
+}
+
+/* Footer */
+.lb-footer {
+    border-top: 1px solid var(--lb-border);
+    color: var(--lb-muted);
+    font-size: 0.92rem;
+}
+
+/* Botón flotante volver arriba */
+#btn-volver-arriba {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: var(--lb-accent);
+    color: #ffffff;
+    border: none;
+    box-shadow: 0 4px 14px rgba(67, 48, 43, 0.3);
+    font-size: 1.2rem;
+    line-height: 1;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 1050;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+#btn-volver-arriba.visible {
+    display: flex;
+}
+
+#btn-volver-arriba:hover {
+    background-color: var(--lb-accent-hover);
+    transform: translateY(-2px);
+}
+
+@media (max-width: 991.98px) {
+    .lb-navbar .navbar-nav {
+        padding-top: 12px;
+        gap: 8px;
+    }
+
+    .lb-navbar .nav-link {
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        padding-top: 78px;
+    }
+
+    .lb-hero-img {
+        height: auto;
+        max-height: 280px;
+    }
+}

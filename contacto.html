@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Canales de atención directa y formulario de pedidos de Luz &amp; Bloom. Comunícate vía WhatsApp para consultas y encargos personalizados.">
+    <title>Contacto y Pedidos - Luz &amp; Bloom</title>
+    <link rel="stylesheet" href="vendor/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <header id="encabezado-principal">
+        <nav id="menu-principal" class="navbar navbar-expand-lg fixed-top lb-navbar" aria-label="Navegación principal">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="img/logo-luz-bloom.png" alt="Logo de Luz &amp; Bloom - Velas y Jabones Artesanales">
+                    <span>Luz &amp; Bloom</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContenido" aria-controls="navbarContenido" aria-expanded="false" aria-label="Abrir menú de navegación">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarContenido">
+                    <ul class="navbar-nav gap-2">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="nosotros.html">Quiénes Somos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="productos.html">Productos y Materias Primas</a></li>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main id="contenido-contacto" class="container my-4">
+        <div class="text-center mb-4">
+            <h1 class="titulo-pagina mb-2">Contacto y Pedidos</h1>
+            <p class="subtitulo-pagina mb-0">Comunícate con Luz &amp; Bloom para consultas, pedidos personalizados y catálogo</p>
+        </div>
+
+        <div class="row g-4 align-items-start mb-5">
+            <section id="datos-contacto" class="col-lg-5">
+                <div class="lb-card p-4">
+                    <h2 class="h4 mb-3">Canales de Atención</h2>
+                    <p>Puedes contactarnos directamente a través de nuestros canales digitales o completando el formulario a continuación:</p>
+                    <ul class="list-unstyled border-top border-bottom py-2 my-3">
+                        <li class="py-1"><strong>WhatsApp oficial de atención y pedidos:</strong> <a href="https://wa.me/56930549400" target="_blank" rel="noopener">+56 9 3054 9400</a></li>
+                    </ul>
+                    <div class="text-center text-lg-start mt-3">
+                        <img src="img/logo-referencia-whatsapp.jpg" class="img-fluid rounded-3" style="max-width: 260px;" alt="Referencia gráfica de contacto WhatsApp Luz &amp; Bloom +56 9 3054 9400">
+                    </div>
+                </div>
+            </section>
+
+            <section id="seccion-formulario" class="col-lg-7">
+                <div class="lb-card p-4">
+                    <h2 class="h4 mb-2">Formulario de Solicitud</h2>
+                    <p class="text-body-secondary">Completa tus datos y cuéntanos qué producto artesanal te interesa:</p>
+
+                    <div id="alerta-formulario" class="alert d-none" role="status" aria-live="polite"></div>
+
+                    <form action="https://wa.me/56930549400" method="get" name="formulario_contacto" id="formulario-contacto" novalidate>
+                        <fieldset class="border-0 p-0 m-0">
+                            <legend class="visually-hidden">Formulario de Solicitud</legend>
+
+                            <div class="mb-3">
+                                <label for="nombre" class="form-label fw-semibold">Nombre completo:</label>
+                                <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Ej: María Pérez" required minlength="3">
+                                <div class="invalid-feedback">Ingresa tu nombre completo (mínimo 3 caracteres).</div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="correo" class="form-label fw-semibold">Correo electrónico:</label>
+                                <input type="email" class="form-control" id="correo" name="correo" placeholder="ejemplo@correo.cl" required>
+                                <div class="invalid-feedback">Ingresa un correo electrónico válido (ej: nombre@dominio.cl).</div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="telefono" class="form-label fw-semibold">Teléfono / WhatsApp:</label>
+                                <input type="tel" class="form-control" id="telefono" name="telefono" placeholder="+56 9 1234 5678">
+                                <div class="invalid-feedback">Ingresa un número de teléfono válido (al menos 8 dígitos) o déjalo vacío.</div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="linea_producto" class="form-label fw-semibold">Línea de producto de interés:</label>
+                                <select class="form-select" id="linea_producto" name="linea_producto" required>
+                                    <option value="">-- Seleccione una opción --</option>
+                                    <option value="velas">Velas Artesanales y Aromáticas</option>
+                                    <option value="wax_melts">Bombones Aromáticos y Quemadores</option>
+                                    <option value="jabones">Jabones Artesanales Botánicos</option>
+                                    <option value="sales">Sales de Baño Relajantes</option>
+                                    <option value="pack_regalo">Caja de Regalo / Pedido Especial</option>
+                                </select>
+                                <div class="invalid-feedback">Selecciona la línea de producto que te interesa.</div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="materia_prima" class="form-label fw-semibold">Aroma o ingrediente preferido:</label>
+                                <select class="form-select" id="materia_prima" name="materia_prima">
+                                    <option value="rosa">Rosa</option>
+                                    <option value="calendula">Caléndula</option>
+                                    <option value="manzanilla">Manzanilla</option>
+                                    <option value="menta">Menta y Romero</option>
+                                    <option value="canela">Naranja y Canela</option>
+                                    <option value="miel">Miel</option>
+                                    <option value="clavo">Café y Clavo de Olor</option>
+                                </select>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="mensaje" class="form-label fw-semibold">Mensaje o detalle de tu pedido:</label>
+                                <textarea class="form-control" id="mensaje" name="text" rows="4" placeholder="Escribe aquí tu consulta o los productos que deseas encargar..." required minlength="10"></textarea>
+                                <div class="invalid-feedback">Describe tu consulta o pedido (mínimo 10 caracteres).</div>
+                            </div>
+
+                            <div class="form-check mb-3">
+                                <input type="checkbox" class="form-check-input" id="envase_reutilizable" name="envase_reutilizable" value="si" checked>
+                                <label class="form-check-label" for="envase_reutilizable">Deseo recibir información sobre envases reutilizables y recargas.</label>
+                            </div>
+
+                            <div id="resumen-solicitud" class="lb-resumen-box mb-3">
+                                <strong>Vista previa de tu solicitud:</strong>
+                                <p id="texto-resumen" class="mb-0 mt-1 text-body-secondary">Completa los campos para generar el resumen de tu pedido.</p>
+                            </div>
+
+                            <div class="d-flex flex-wrap gap-2">
+                                <button type="submit" class="btn btn-lb">Enviar Solicitud</button>
+                                <button type="reset" class="btn btn-lb-soft">Restablecer</button>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer id="pie-pagina" class="container lb-footer text-center py-4 mt-5">
+        <p class="mb-1"><strong>Luz &amp; Bloom</strong> - Emprendimiento local y producción artesanal en Chile.</p>
+        <p class="mb-1">Canal oficial de atención: WhatsApp <a href="https://wa.me/56930549400" target="_blank" rel="noopener">+56 9 3054 9400</a></p>
+        <p class="mb-0">Gracias por elegir lo artesanal, lo consciente y lo hecho con amor.</p>
+    </footer>
+
+    <button id="btn-volver-arriba" type="button" aria-label="Volver arriba" title="Volver arriba">&#8593;</button>
+
+    <script src="vendor/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
