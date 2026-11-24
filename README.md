@@ -1,12 +1,12 @@
 # Luz & Bloom — Sitio Web Artesanal
 
-Versión final del sitio web desarrollado para el emprendimiento chileno **Luz & Bloom**, dedicado a la elaboración artesanal de velas aromáticas, jabones botánicos y sales de baño relajantes.
+Versión final del sitio web desarrollado para el emprendimiento **Luz & Bloom**, dedicado a la elaboración artesanal de velas aromáticas, jabones botánicos y sales de baño relajantes.
 
-Proyecto correspondiente al **Examen Final** de la asignatura **Diseño Web** (IPLACEX).
+Proyecto correspondiente al **Examen Final** de la asignatura **Diseño Web**.
 
 ## Enlace de despliegue (Netlify)
 
-- **Sitio en producción:** _[Pendiente: pegar aquí la URL de Netlify una vez vinculado el repositorio]_
+- **Sitio en producción:** Estoy en eso.
 
 ## Estructura del proyecto
 
@@ -27,9 +27,9 @@ Proyecto correspondiente al **Examen Final** de la asignatura **Diseño Web** (I
 
 ## Tecnologías utilizadas
 
-- **HTML5 semántico** (`header`, `nav`, `main`, `section`, `article`, `footer`) y atributos de accesibilidad (`aria-label`, `aria-current`, `aria-live`).
+- **HTML5** (`header`, `nav`, `main`, `section`, `article`, `footer`) y atributos de accesibilidad (`aria-label`, `aria-current`, `aria-live`).
 - **CSS3 + Bootstrap 5.3.3** integrado localmente para diseño responsivo (escritorio, tablet y móvil) con variables CSS personalizadas en `css/estilos.css`.
-- **JavaScript (ES6+)** sin dependencias externas adicionales en `js/app.js`.
+- **JavaScript** sin dependencias externas adicionales en `js/app.js`.
 
 ## Funcionalidades JavaScript y eventos implementados
 
@@ -48,7 +48,7 @@ Proyecto correspondiente al **Examen Final** de la asignatura **Diseño Web** (I
 
 ## Visualización local
 
-Basta con abrir `index.html` en cualquier navegador web moderno (no requiere servidor ni instalación de paquetes).
+Basta con abrir `index.html` en cualquier navegador web.
 
 ## Autor
 
