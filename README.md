@@ -6,7 +6,7 @@ Proyecto correspondiente al **Examen Final** de la asignatura **Diseño Web**.
 
 ## Enlace de despliegue (Netlify)
 
-- **Sitio en producción:** Estoy en eso.
+- **Sitio en producción:** https://disenoweb-iplacex-lb0o.netlify.app/
 
 ## Estructura del proyecto
 
